@@ -1,83 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Account Profile Page</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-		}
-		
-		header {
-			background-color: #f8f9fa;
-			padding: 20px;
-			text-align: center;
-		}
-		
-		main {
-			display: flex;
-			flex-wrap: wrap;
-			margin: 20px;
-		}
-		
-		section {
-			background-color: #e9ecef;
-			border: 1px solid #ced4da;
-			flex-basis: calc(33.333% - 20px);
-			margin: 10px;
-			padding: 20px;
-		}
-		
-		nav {
-			background-color: #6c757d;
-			flex-basis: 100%;
-			padding: 20px;
-		}
-		
-		nav a {
-			color: #ffffff;
-			margin-right: 10px;
-			text-decoration: none;
-		}
-		
-		nav a:hover {
-			text-decoration: underline;
-		}
-	</style>
-</head>
-<body>
-	<header>
-		<h1>Account Profile Page</h1>
-	</header>
-	
-	<nav>
-		<a href="#about-me">About Me</a>
-		<a href="#photos">Photos</a>
-		<a href="#links">Links</a>
-		<a href="#contact-me">Contact Me</a>
-	</nav>
-	
-	<main>
-		<section id="about-me">
-			<h2>About Me</h2>
-			<p>This is where you can talk about yourself and your interests.</p>
-		</section>
-		
-		<section id="photos">
-			<h2>Photos</h2>
-			<p>Here's where you can share some of your favorite photos.</p>
-		</section>
-		
-		<section id="links">
-			<h2>Links</h2>
-			<p>This is where you can share some of your favorite links.</p>
-		</section>
-		
-		<section id="contact-me">
-			<h2>Contact Me</h2>
-			<p>If you want to get in touch, you can use the form below.</p>
-			
-			<!-- Add your contact form here -->
-		</section>
-	</main>
-</body>
-</html>
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #f8f9fa;
+	padding: 20px;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px;
+}
+
+section {
+	background-color: #e9ecef;
+	border: 1px solid #ced4da;
+	flex-basis: calc(33.333% - 20px);
+	margin: 10px;
+	padding: 20px;
+}
+
+nav {
+	background-color: #6c757d;
+	flex-basis: 100%;
+	padding: 20px;
+}
+
+nav a {
+	color: #ffffff;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
