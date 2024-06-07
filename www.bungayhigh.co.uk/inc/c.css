@@ -598,7 +598,7 @@ textarea{
 	overflow:auto;
 	vertical-align:top
 }
-button,input,select,textarea{
+button,input,select,textarea {
 	font-size:100%;
 	margin:0;
 	vertical-align:baseline;
@@ -613,7 +613,7 @@ button,input{
 }
 button,input[type="button"],input[type="reset"],input[type="submit"]{
 	cursor:pointer;
-	-webkit-appearance:button
+	appearance:button
 }
 input[type="checkbox"],input[type="radio"]{
 	-webkit-box-sizing:border-box;
@@ -621,7 +621,7 @@ input[type="checkbox"],input[type="radio"]{
 	box-sizing:border-box
 }
 input[type="search"]{
-	-webkit-appearance:textfield;
+	appearance:textfield;
 	-moz-box-sizing:content-box;
 	-webkit-box-sizing:content-box;
 	box-sizing:content-box
@@ -816,7 +816,7 @@ h4{
 	padding-left:30px
 }
 h4.open{
-	background-image:url(/i/design/expanding-faq/minus-white.png)
+	background-image:url(/www.bungayhigh.co.uk/i/design/expanding-faq/minus-white.png)
 }
 h4.closed{
 	background-image:url(/www.bungayhigh.co.uk/i/design/expanding-faq/plus-white.png)
@@ -1011,16 +1011,16 @@ header h1{
 	display:inline-block
 }
 .social-icons .twitter-ic{
-	background:url(/i/design/twitter-ic.png) no-repeat
+	background:url(/www.bungayhigh.co.uk/i/design/twitter-ic.png) no-repeat
 }
 .social-icons .youtube-ic{
-	background:url(/i/design/youtube-ic.png) no-repeat
+	background:url(/www.bungayhigh.co.uk/i/design/youtube-ic.png) no-repeat
 }
 .social-icons .google-ic{
-	background:url(/i/design/google-ic.png) no-repeat
+	background:url(/www.bungayhigh.co.uk/i/design/google-ic.png) no-repeat
 }
 .social-icons .mail-ic{
-	background:url(/i/design/mail-ic.png) no-repeat
+	background:url(/www.bungayhigh.co.uk/i/design/mail-ic.png) no-repeat
 }
 #logobar{
 	text-align:left
@@ -1051,7 +1051,7 @@ img#logo{
 #FS input[type=search]{
 	color:transparent;
 	cursor:pointer;
-	background:url(/i/design/search-ic.png) no-repeat 0 center #000;
+	background:url(/www.bungayhigh.co.uk/i/design/search-ic.png) no-repeat 0 center #000;
 	padding:0px;
 	width:28px;
 	height:28px;
@@ -1604,7 +1604,7 @@ ul.SideList p.title{
 	letter-spacing:0.03em
 }
 #SideHeadingPages h2{
-	background:#e03a3e url(/i/design/related-ic.png) no-repeat 17px 10px;
+	background:#e03a3e url(/www.bungayhigh.co.uk/i/design/related-ic.png) no-repeat 17px 10px;
 	color:#fff;
 	font-size:22px;
 	text-transform:uppercase;
@@ -1627,7 +1627,7 @@ ul.SideList p.title{
 	margin-bottom:30px
 }
 .ColumnRight #SideHeadingDiary h2{
-	background:#e03a3e url(/i/design/diary-ic.png) no-repeat 17px 10px;
+	background:#e03a3e url(/www.bungayhigh.co.uk/i/design/diary-ic.png) no-repeat 17px 10px;
 	color:#fff;
 	font-size:22px;
 	text-transform:uppercase;
