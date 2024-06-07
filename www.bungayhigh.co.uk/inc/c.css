@@ -1001,7 +1001,7 @@ header h1{
 }
 .social-icons{
 	float:right;
-	width:250px;
+	width:150px;
 	margin:51px 0 24px 0
 }
 .social-icons a{
@@ -1015,9 +1015,6 @@ header h1{
 }
 .social-icons .youtube-ic{
 	background:url(/www.bungayhigh.co.uk/i/design/youtube-ic.png) no-repeat
-}
-.social-icons .google-ic{
-	background:url(/www.bungayhigh.co.uk/i/design/google-ic.png) no-repeat
 }
 .social-icons .mail-ic{
 	background:url(/www.bungayhigh.co.uk/i/design/mail-ic.png) no-repeat
