@@ -643,117 +643,123 @@ button::-moz-focus-inner,input[type="button"]::-moz-focus-inner,input[type="subm
 	border:0 none !important
 }
 ul.nav{
-	display:table;
-	width:630px;
-	margin:0;
-	list-style:none;
-	float:right
+    display:table;
+    width:700px;
+    margin: 0;
+    list-style:none;
+    float:left;
 }
+
 ul.nav li{
-	margin:0;
-	padding:0;
-	background:none;
-	position:relative;
-	display:table-cell;
-	text-align:center;
-	white-space:nowrap
+    margin:0;
+    padding:0;
+    background:none;
+    position:relative;
+    display:table-cell;
+    text-align:center;
+    white-space:nowrap;
 }
+
 ul.nav li a{
-	height:24px;
-	line-height:24px;
-	display:block;
-	text-align:center;
-	font-size:21px;
-	color:#fff;
-	-moz-border-radius:25px;
-	border-radius:25px;
-	font-weight:lighter
+    height:24px;
+    line-height:24px;
+    display:block;
+    text-align:center;
+    font-size:21px;
+    color:#fff;
+    -moz-border-radius:25px;
+    border-radius:25px;
+    font-weight:lighter;
+    position:relative; /* Add this line */
+    text-decoration:none; /* Remove underlines */
 }
-ul.nav>li:hover>a,ul.nav>li>a:hover{
-	background:#e03a3e;
-	text-decoration:none
+
+ul.nav li a:hover {
+    text-decoration:none; /* Remove underlines */
 }
+
+ul.nav>li>a:hover{
+    text-decoration:none;
+}
+
 ul.nav li ul{
-	position:absolute;
-	left:-999em;
-	margin:0;
-	padding:0 20px 20px;
-	background:none;
-	opacity:0;
-	visibility:hidden;
-	-webkit-transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	transition:all 0.3s ease-in-out;
-	z-index:9999999
+    position:absolute;
+    left:-999em;
+    margin:0;
+    padding:0 20px 20px;
+    background:none;
+    opacity:0;
+    visibility:hidden;
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    z-index:9999999;
 }
+
 ul.nav li:hover ul{
-	left:auto;
-	margin-left:-20px;
-	opacity:1;
-	visibility:visible;
-	-webkit-transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	transition:all 0.3s ease-in-out
+    left:auto;
+    margin-left:-20px;
+    opacity:1;
+    visibility:visible;
 }
-ul.nav li:active ul{
-	-webkit-transition:opacity 0.1s ease-in-out;
-	-moz-transition:opacity 0.1s ease-in-out;
-	transition:opacity 0.1s ease-in-out
-}
+
 ul.nav li li{
-	float:none;
-	display:block;
-	padding:0;
-	height:auto;
-	line-height:35px
+    float:none;
+    display:block;
+    padding:0;
+    height:auto;
+    line-height:35px;
 }
+
 ul.nav li li a{
-	background:#e03a3e;
-	height:28px;
-	line-height:28px;
-	padding:3px 12px;
-	min-width:150px;
-	float:none;
-	top:auto;
-	display:block;
-	position:static;
-	text-align:left;
-	text-decoration:none;
-	font-size:16px;
-	text-transform:none;
-	-moz-border-radius:0px;
-	border-radius:0px
+    background:#e03a3e;
+    height:28px;
+    line-height:28px;
+    padding:3px 12px;
+    min-width:150px;
+    float:none;
+    top:auto;
+    display:block;
+    position:static;
+    text-align:left;
+    text-decoration:none;
+    font-size:16px;
+    text-transform:none;
+    -moz-border-radius:0px;
+    border-radius:0px;
 }
-ul.nav li li:hover,ul.nav li li:hover>a,ul.nav li li a:hover,ul.nav li li a:focus{
-	background:#fff;
-	color:#e03a3e
+
+ul.nav li li:hover,
+ul.nav li li a:hover,
+ul.nav li li a:focus{
+    background:#fff;
+    color:#e03a3e;
 }
+
 ul.nav li li a.parent:after{
-	margin:-1px 0 0 10px;
-	content:url("/www.bungayhigh.co.uk/i/design/lite/nav-right-arrow-white.png");
-	opacity:1;
-	line-height:1
+    margin:-1px 0 0 10px;
+    content:url("/www.bungayhigh.co.uk/i/design/lite/nav-right-arrow-white.png");
+    opacity:1;
+    line-height:1;
 }
-ul.nav ul ul{
-	z-index:505
+
+/* Add the following styles for the white line */
+ul.nav li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
 }
-ul.nav li:hover ul ul{
-	left:100%;
-	top:0;
-	opacity:0;
-	visibility:hidden;
-	-webkit-transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	transition:all 0.3s ease-in-out
-}
-ul.nav ul li:hover ul{
-	left:100%;
-	top:0;
-	opacity:1;
-	visibility:visible;
-	-webkit-transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	transition:all 0.3s ease-in-out
+
+ul.nav li a:hover::after,
+ul.nav li:hover a::after {
+    width: 100%;
+    left: 0;
 }
 body{
 	color:#000;
