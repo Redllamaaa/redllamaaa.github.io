@@ -45,63 +45,35 @@
 	<!-- Current position in navigation -->
 
 	<style type="text/css">
-		.nav li a#nav1609  					
-		#SideHeadingPages li a#subID5287		{text-decoration:underline; background: #676767; color: #fff;}
-		#SideHeadingPages li a#childID5287	{text-decoration:underline; background: #676767 url(../i/design/lite/bg_nav_li_a_child_white.png) 20px 12px no-repeat; color: #fff;}
-		ul li.sidelist_li							{display:none;}
-		ul li.PPID5287							{display:block; }
+		.nav li a#nav1609, 
+		#SideHeadingPages li a#subID5287, 
+		#SideHeadingPages li a#childID5287 {
+			text-decoration: underline;
+			color: #fff;
+			position: relative; /* Add this line */
+		}
 
-.trust-tab {
-    background: rgba(255,255,255,0.9) url(../i/design/EAST-Logo.png) no-repeat bottom 10px right 15px;
-    background-size: 100px;
-}
-		
-			
-				@media only screen and (max-width: 990px)
-{
-   
-   .trust-tab {
-    top: -160px;
-    z-index: 9;
-}
+		.nav li a#nav1609::after, 
+		#SideHeadingPages li a#subID5287::after, 
+		#SideHeadingPages li a#childID5287::after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: #ffffff00;
+		}
 
-}
-                                    
-                                    @media only screen and (max-width: 1600px)
-{
-.trust-tab {
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-										
-	}
+		ul li.sidelist_li {
+			display: none;
+		}
 
-
-				@media only screen and (max-width: 600px){
-   
-   .trust-tab {
-display: none;
-}
-}
-
-#scitt-head {
-     display: inline-block;
-    margin: 0 0 0 145px;
-    width: 95px;
-    height: 51px;
-    overflow: hidden;
-    background: url(../i/design/scitt.png) no-repeat center;
-    -moz-background-size: contain;
-    background-size: contain;
-    -moz-background-size: 95px 51px;
-    background-size: 95px 51px;
-    background-position: center;
-    background-color: #fff;
-    padding: 5px;
-}
-
-								</style>
+		ul li.PPID5287 {
+			display: block;
+		}
+	</style>						
 
 	<!-- Import jQuery -->
 
