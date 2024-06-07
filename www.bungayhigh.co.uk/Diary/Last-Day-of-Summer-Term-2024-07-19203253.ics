@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+X-WR-TIMEZONE:Europe/London
+PRODID:-//Apple Inc.//iCal 3.0//EN
+CALSCALE:GREGORIAN
+X-LOTUS-CHARSET:UTF-8
+VERSION:2.0
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20240607T190800
+DTSTART;VALUE=DATE:20240719
+UID:http://bungayhigh.greenhousecms.co.uk/Diary/Last-Day-of-Summer-Term-2024-07-19/index.asp?PCID=203253
+URL;VALUE=URI:http://bungayhigh.greenhousecms.co.uk/Diary/Last-Day-of-Summer-Term-2024-07-19
+SUMMARY:Last Day of Summer Term
+DESCRIPTION:; More details - http://bungayhigh.greenhousecms.co.uk/Diary/Last-Day-of-Summer-Term-2024-07-19
+PRIORITY:5
+CLASS:PUBLIC
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
