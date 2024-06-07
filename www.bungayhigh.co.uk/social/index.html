@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Social Feed</title>
+	<meta name="description" content="Hilden Grange Preparatory School" />
+	<meta name="keywords" content="Hilden Grange Preparatory School" />
+	<meta name="author" content="Hilden Grange Preparatory School"/>
+	<meta name="robots" content="INDEX, FOLLOW"/>
+	<meta name="revisit-after" content="2 days"/>
+	<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/wall-styles.css" media="all" />
+
+	<!-- Import IE8 Adjustments -->
+	<!--[if lt IE 9]>
+		<style>
+			html { background: #8a5992; }
+			.stream li { background-color: #552D60; }
+		</style>
+	<![endif]-->
+
+	<!-- Font Imports -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+
+	<!-- jQuery -->
+	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<!-- Concatenated Scripts -->
+	<script type="text/javascript" src="js/min/scripts-min.js"></script>
+
+	<!-- Script Setup -->
+	<script type="text/javascript">
+	$(document).ready(function($){
+		$('#social-stream').dcSocialStream({
+			feeds: {
+				twitter: {
+					id: 'bhs_academy',
+					//id: 'wesleysports, helloGSO',
+					out: 'intro,text',
+					images: 'thumb',
+					retweets: 'true'
+				},
+				//  facebook: {
+				//  	id: '195689253790311'
+				//  }
+			},
+			rotate: {
+				delay: 0
+			},
+			twitterId: 'bhs_academy',
+			//twitterId: 'wesleysports, helloGSO',
+			control: false,
+			filter: true,
+			days: 120,
+			wall: true,
+			cache: false,
+			max: 'limit',
+			limit: 30,
+			iconPath: 'images/dcsns-dark/',
+			imagePath: 'images/dcsns-dark/'
+		});
+	});
+	</script>
+</head>
+<body>
+
+
+<div id="social-stream"></div>
+
+</body>
+</html>
