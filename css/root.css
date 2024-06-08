@@ -31,7 +31,7 @@ header {
     display: flex;
     width: 60%;
     height: 100%;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 700;
     opacity: 1;
     transition: opacity 0.25s;
@@ -47,7 +47,7 @@ header {
     justify-content: center;
     width: 25%;
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 1.5em;
     text-decoration: none;
     transition: 0.25s;
     border-radius: 50px;
@@ -113,7 +113,7 @@ ul.nav li{
 ul.nav li a{
   position: relative;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 0.750em;
   font-weight: 500;
   padding: 6px 0;
   text-decoration: none;
