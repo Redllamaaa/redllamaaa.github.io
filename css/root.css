@@ -85,3 +85,75 @@ header {
     }
   }
 
+/*******************************************************************************
+ *                                                                             *
+ * Navigation Bar (header)                                                  *
+ *                                                                             *
+ ******************************************************************************/
+nav#navholder{
+    position:absolute;
+    top:100px;
+    right:5%;
+    margin:0;
+    width:1200px;
+    max-width:100%;
+    z-index:9999;
+    -webkit-box-shadow:inset 0 1px 0 0 rgba(255,255,255,0.2);
+    -moz-box-shadow:inset 0 1px 0 0 rgba(255,255,255,0.2);
+    box-shadow:inset 0 1px 0 0 rgba(255,255,255,0.2)
+  }
+ul.nav{
+  display: flex;
+  align-items: center;
+}
+ul.nav li{
+  list-style: none;
+  margin: 0 12px;
+}
+ul.nav li a{
+  position: relative;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+}
+ul.nav li a:before{
+  content: '';
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #a32d2d;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+ul.nav li a:hover:before{
+  width: 100%;
+}
+ul.nav li.center a:before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+ul.nav li.upward a:before{
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+ul.nav li.upward a:hover:before{
+  bottom: 0px;
+  opacity: 1;
+}
+ul.nav li.forward a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+ul.nav li.forward a:hover:before{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+  
+
