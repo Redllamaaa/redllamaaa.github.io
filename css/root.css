@@ -14,3 +14,74 @@ header {
     justify-content: flex-end;
 }
 
+/*******************************************************************************
+ *                                                                             *
+ * Socials Bar (header)                                                  *
+ *                                                                             *
+ ******************************************************************************/
+.socialbar {
+    display: flex;
+    height: 46px;
+    width: 180px;
+    padding-top: 30px;
+    padding-right: 100px;
+  }
+  .socialbar svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .socialbar .social-twitter,
+  .socialbar .social-youtube,
+  .socialbar .social-email {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+  .socialbar svg {
+    transform: scale(1);
+  }
+  .socialbar .social-twitter:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+  }
+  .socialbar .social-youtube:hover {
+    background-color: #cd201f;
+    animation: bounce_613 0.4s linear;
+  }
+  .socialbar .social-email:hover {
+    background-color: #555555;
+    animation: bounce_613 0.4s linear;
+  }
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
