@@ -50,12 +50,6 @@ a, a:hover {
   margin-bottom: 20px;
   /* adjust the margin as needed */
 }
-/* Hide the image on mobile devices */
-@media (max-width: 768px) {
-  .footer-48201 .footer-image {
-      display: none;
-  }
-}
 .footer-48201 .contact-us-header {
   font-size: 2rem;
   font-weight: bold;
@@ -113,4 +107,13 @@ a, a:hover {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
+}
+
+.footer-48201 .bhs-icon {
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.footer-48201 .east-icon {
+  transform: translateX(-320px) translateY(2px);/* adjust the value to lower the image */
 }
