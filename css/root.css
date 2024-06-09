@@ -43,7 +43,7 @@ a, a:hover {
 .footer-48201 .copyright a {
   color: #be4d4d;
 }
-.footer-image {
+.footer-48201 .footer-image {
   margin-top: 20px;
   max-width: 1200px;
   /* adjust the width as needed */
@@ -52,26 +52,66 @@ a, a:hover {
 }
 /* Hide the image on mobile devices */
 @media (max-width: 768px) {
-  .footer-image {
+  .footer-48201 .footer-image {
       display: none;
   }
 }
-.contact-us-header {
+.footer-48201 .contact-us-header {
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
 }
-.contact-info {
+.footer-48201 .contact-info {
   list-style: none;
+  font-size: 1.15rem;
   padding: 0;
-  margin: 0;
+  margin: 10px;
   text-align: center;
 }
-.contact-info li {
+.footer-48201 .contact-info li {
   margin-bottom: 10px;
 }
-.contact-info i {
-  margin-right: 10px;
+.footer-48201 .contact-info i {
+  margin-right: 0px;
   color: #fff;
+}
+.contact-info button {
+  font-size: 1.15rem;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.contact-info button:focus,
+.contact-info button:hover {
+  color: #fff;
+}
+
+.contact-info button:focus:after,
+.contact-info button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.contact-info button:after {
+  content: "";
+  pointer-events: none;
+  bottom: 10px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
