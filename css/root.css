@@ -85,23 +85,22 @@ a, a:hover {
   position: relative;
   border: none;
   background: none;
-  text-transform: uppercase;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color;
 }
-
+.contact-info a {
+  color: #fff;
+}
 .contact-info button:focus,
 .contact-info button:hover {
   color: #fff;
 }
-
 .contact-info button:focus:after,
 .contact-info button:hover:after {
   width: 100%;
   left: 0%;
 }
-
 .contact-info button:after {
   content: "";
   pointer-events: none;
